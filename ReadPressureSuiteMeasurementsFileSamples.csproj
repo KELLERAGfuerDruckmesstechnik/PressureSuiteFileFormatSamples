@@ -14,7 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="ExampleData\CLOUD_ARC-9.20-1234_2024.01.12 09-10-01.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="ExampleData\CLOUD_ARC-9.20-5_2024.01.04_15-01-11.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="ExampleData\CLOUD_EUI-E84F25000001A146_2023.11.22_16-19-13.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="ExampleData\EUI-F84F25000001A0AD_2024-01-12_01_25_17.json">

@@ -1,17 +1,16 @@
-﻿using KellerAg.Shared.Entities.FileFormat;
-using Newtonsoft.Json;
-using KellerAg.Shared.Entities.Channel;
+﻿using KellerAg.Shared.Entities.Channel;
+using KellerAg.Shared.Entities.FileFormat;
 using KellerAg.Shared.Entities.Filetypes;
 using KellerAg.Shared.Export;
 using KellerAg.Shared.Export.ExportEngines;
+using Newtonsoft.Json;
 
-namespace ReadKellerIoTMeasurementFile;
-
+namespace ReadPressureSuiteMeasurementsFileSamples;
 internal class Program
 {
     static void Main(string[] args)
     {
-        var jsonText = File.ReadAllText("ExampleData/EUI-F84F25000001A0AD_2024-01-12_01_25_17.json");
+        var jsonText = File.ReadAllText("ExampleData/CLOUD_EUI-E84F25000001A146_2023.11.22_16-19-13.json");
 
         MeasurementFileFormat measurementFile = JsonConvert.DeserializeObject<MeasurementFileFormat>(jsonText);
 
